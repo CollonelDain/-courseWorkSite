@@ -1,0 +1,149 @@
+body {
+  font-family: Courier New, Courier, Consolas, Lucida Console;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: #535353;
+}
+main {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 20px;
+  padding: 0.75%;
+/*  padding-bottom: 10%;  */
+  background-color: #C0C0C0;  
+}
+#firstView { 
+  position: absolute;
+}
+.main2 {
+  background-color: #DCDCDC;
+  padding: 0.5%;
+}
+
+h1:not(.logo) {
+	margin-top: 20px;
+}
+
+h2 {
+	margin-top: 20px;
+}
+
+h3 {
+	margin-top: 20px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	padding: 0 15px;
+	font-size: 18px;
+}
+.genFooter {
+	padding: 30px 0;
+	background: #3C3D41;
+	color: white;
+	margin-top: 10px;
+}
+.footer-col {
+	width: 33.3333333333%;
+	float: left;
+}
+.footer-col a {
+	color: white;
+}
+.footer-col:last-child {
+	text-align: right;
+}
+.social-bar-wrap {
+	text-align: center;
+}
+.social-bar-wrap a {
+	padding: 0 7px;
+	font-size: 18px;
+}
+
+
+		
+@media (max-width: 650px) {
+	.John {
+		opacity: 0;
+	}
+	img {
+		width: 100%;
+	}
+
+	.asideChild  {
+		width: 100%;
+		font-size: 20px;
+		position:static;
+	}
+
+	.flow_around {
+		font-size: 25px;
+	}
+}
