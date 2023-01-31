@@ -1,0 +1,257 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	color: #C0C0C0;
+}
+
+.formFaq {
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px 0 10px 10px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, .4);;
+	width: 400px;
+	height: 300px;
+	box-sizing: border-box;
+	padding-top: 10px;
+}
+
+.faq {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+	left: 100%;
+	top: 0;
+	padding: 0 7px;
+	background: #fff;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 15px 0 15px rgba(0, 0, 0, .2);
+}
+
+.faq span {
+	font-size: 14px;
+}
+
+.inputBlock {
+	display: flex;
+	height: 40px;
+	width: 95%;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.inputBlock i {
+	font-size: 21px;
+	color: #000;
+	margin: 0 10px 0 20px;
+}
+
+.inputBlock input {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #787878;
+	flex: 1;
+	font-size: 16px;
+	height: 70%;
+	outline: none;
+}
+
+.commentBlock {
+	display: flex;
+	width: 95%;
+	align-items: flex-start;
+	margin-top: 25px;
+	height: 110px;
+}
+
+.commentBlock i {
+	font-size: 21px;
+	color: #000;
+	margin: 0 10px 0 20px;
+}
+
+.commentBlock textarea {
+	background: none;
+	border: none;
+	font-size: 16px;
+	font-family: sans-serif;
+	flex: 1;
+	height: 100%;
+	outline: none;
+}
+
+.under {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 15px 20px 0 50px;
+}
+
+.counter {
+	font-size: 12px;
+}
+
+#submitBtn {
+	background: none;
+	border: none;
+	outline: none;
+	padding: 9px 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+	font-size: 14px;
+	transition: .4s;
+}
+
+#submitBtn:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
+.red {
+	color: red;
+}
+
+
+#firstView { 
+  position: absolute;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.cap {
+	font-family: Courier New, Courier, Consolas, Lucida Console;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: #535353;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	padding: 0 15px;
+	font-size: 18px;
+}
+.genFooter {
+	padding: 30px 0;
+	background: #3C3D41;
+	color: white;
+	margin-top: 10px;
+}
+.footer-col {
+	width: 33.3333333333%;
+	float: left;
+}
+.footer-col a {
+	color: white;
+}
+.footer-col:last-child {
+	text-align: right;
+}
+.social-bar-wrap {
+	text-align: center;
+}
+.social-bar-wrap a {
+	padding: 0 7px;
+	font-size: 18px;
+}
+
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media (max-width: 650px) {
+	.navbar input[type="checkbox"],
+	.navbar .hamburger-lines {
+  	display:flex;
+	}
+
+	
+
+	.formFaq {
+		border-radius: 10px;
+		position: static;
+		margin: 50%;
+		overflow: hidden;
+	}
+	
+	.faq {
+		opacity: 0;
+	}
+	
+	#firstVision {
+		width: 100%;
+	}
+}
+
