@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MS Paint Adventures Helper</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.jpg">
+	<link rel="stylesheet" href="../mediaAll.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body bgcolor="#C0C0C0">
+	<header class="cap">
+		<nav class="navbar">
+      <div class="navbar-container container">
+          <input class="checkbox" type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+						<li><a href="../index5.html">Home</a></li>
+            <li><a href="../newsPage.html">News</a></li>
+            <li><a href="../галееря/testSite.html">Gallery</a></li>
+            <li><a href="../обратная связь/index (1).html">Contact</a></li>
+          </ul>
+          <h1 class="logo"><img src="../ATTI7.png" height=50></h1>
+					<ul class="menu-items">
+						<li><a href="../singInForm/sing.html">Sign in</a></li>
+          </ul>
+      </div>
+  	</nav>
+	</header>	
+	<div id="firstVision">
+		<img src="https://www.mspaintadventures.ru/mspa/styles/default/images/bannertemp.gif" width="100%" height="200px">
+	</div>
+
+	<div class="shell">
+		<form action="url" class="formFaq">
+			<div class="faq">
+				<span>F</span>
+				<span>A</span>
+				<span>Q</span>
+			</div>
+
+			<div class="inputBlock">
+				<i class="far fa-user"></i>
+				<input type="text" class="name" placeholder="Имя">
+			</div>
+			<div class="inputBlock">
+				<i class="far fa-envelope"></i>
+				<input type="text" class="email" placeholder="E-mail">
+			</div>
+			<div class="commentBlock">
+				<i class="far fa-comment-dots"></i>
+				<textarea name="comment" id="comment" class="inputText" autocomplete="off" placeholder="Сообщение"></textarea>
+			</div>
+
+			<div class="under">
+				<p class="counter"><span id="count"></span>/500 знаков</p>
+				<div class="sendBlock">
+					<input type="submit" id="submitBtn" value="Отправить">
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="John" style="width: 100px; height: 100px; position: fixed; z-index: 100; left: 90%; top: 90%;"><img src="../TheUbiquitousJohn.gif" width="100px" height="100px"></div>
+
+	<script src="../testGallery.js"></script>
+	<script>
+		var startCount = 0;
+		var maxCount = 500;
+		var submitBtn = document.getElementById("submitBtn");
+		var counter = document.getElementById("count");
+		var counterArea = document.getElementsByClassName("counter");
+		counter.textContent = startCount;
+
+		const textarea = document.getElementById("comment");
+		textarea.addEventListener('input', onInput);
+
+		function onInput(evt) {
+			const length = evt.target.value.length;
+			counter.textContent = length;
+
+			if (counter.textContent >= maxCount) {
+				counterArea[0].classList.add("red");
+				submitBtn.setAttribute('disabled', true);
+			} else if (counter.textContent < 500 && counterArea[0].classList.contains("red")) {
+				counterArea[0].classList.remove("red");
+				submitBtn.disabled = false;
+			}
+		}
+	</script>
+
+</body>
+</html>
